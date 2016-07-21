@@ -19,7 +19,7 @@ function fileSelected() {
 		  fileSize = (Math.round(totalSize * 100 / 1024) / 100).toString() + 'KB';
 		}
 		$('#fileNames').html(fileNames);
-		$('#fileSize').html('Total File Size: ' + fileSize);
+		$('#fileSize').html(' ' + fileSize);
 	  }
 
 	  if (totalSize > 2 * 1024 * 1024 * 1024) {
