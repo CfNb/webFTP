@@ -3,7 +3,7 @@
 'creates a new log file for each day
 
 'This directory must have write permissions by IUSER and IWAM
-logpath = "C:\DigitalFTP Folder\Tmp\Log Files\"
+logpath = "C:\DigitalFTP Folder\Tmp\Log Files_Digital\"
 
 todaydate = Right("0" & Month(Now),2) & Right("0" & Day(Now),2) & Year(Now)
 logfile = todaydate + ".txt"
