@@ -28,7 +28,7 @@ function fileSelected() {
 		$('#message_text').addClass('alert-danger');
 		$("#uploadBtn").prop("disabled", true);
 	  } else {
-		$('#message_text').html("Press upload to begin transfering files");
+		$('#message_text').html("Press Upload to begin transferring files");
 		$('#message_text').removeClass('alert-danger');
 		$('#message_text').addClass('alert-info');
 		$("#uploadBtn").prop("disabled", false);
