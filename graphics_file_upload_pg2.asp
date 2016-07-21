@@ -51,9 +51,8 @@ message = "<div id=""message_text"" class=""alert alert-info text-center"">Revie
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-
 <!-- custom JavaScript-->
-<script src="graphics_file_upload.js"></script>
+<script src="file_upload.js"></script>
 
 </head>
 
