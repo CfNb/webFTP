@@ -51,7 +51,10 @@ function uploadFile() {
 
 function uploadProgress(evt) {
 	if (evt.lengthComputable) {
-	  var percentComplete = Math.round(evt.loaded * 100 / evt.total);
+	  var percentComplete = Math.round(evt.loaded * 100 / evt.total) - 1;
+	  if (percentComplete < 0) {
+	  	percentComplete = 0;
+	  }
 	  $('#progressBar').html('<span class="sr-only">' + percentComplete.toString() + '% </span>'); 
 	  $('#progressBar').css('width', percentComplete.toString() + '%');
 	  $('.modal-title').html("Files Uploading..." + percentComplete.toString() + "%");
@@ -62,6 +65,8 @@ function uploadProgress(evt) {
 
 function uploadComplete(evt) {
 /* This event is raised when the server send back a response */
+	$('#progressBar').html('<span class="sr-only">100% </span>'); 
+	$('#progressBar').css('width', '100%');
 	$('.modal-title').html("Upload Complete!");
 	$('#modal-text').html("A confirmation email with the details of this upload has been sent to you.<br/>Our staff will contact you soon.");
 	$('#uploadedFiles').html($('#fileNames').html());
