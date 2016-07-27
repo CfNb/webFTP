@@ -55,7 +55,7 @@ End If
 <script src="http://cdn.jsdelivr.net/jquery.validation/1.15.0/additional-methods.min.js"></script>
 
 <!-- custom JavaScript-->
-<script src="file_upload.js"></script>
+<script src="graphics_file_upload.js"></script>
 
 <% = reCaptchaScript%>
 </head>
