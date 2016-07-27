@@ -34,7 +34,7 @@ If IsEmpty(session("captchaResponse")) Or session("captchaResponse")="false" The
 	If captchaResponse = "0" then 'captcha failed, go back
 		session("captchaResponse")="false"
 		Call addToLog(session("sessionPID") & " g-recaptcha-response:" & session("captchaResponse"), logloc)
-		Response.Redirect ("file_upload_pg1.asp")
+		Response.Redirect ("graphics_file_upload_pg1.asp")
 	else 'captcha successful, continue
 		session("captchaResponse")="true"
 		Call addToLog(session("sessionPID") & " g-recaptcha-response:" & session("captchaResponse"), logloc)
@@ -52,7 +52,7 @@ message = "<div id=""message_text"" class=""alert alert-info text-center"">Revie
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
 <!-- custom JavaScript-->
-<script src="file_upload.js"></script>
+<script src="graphics_file_upload.js"></script>
 
 </head>
 
