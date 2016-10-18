@@ -9,7 +9,7 @@ Set Upload = Server.CreateObject("Persits.Upload")
 Upload.ProgressID = session("sessionPID")
 
 'Email Variables:
-SMTP = "172.16.1.99" ' SMTP Server
+SMTP = "172.16.1.38" ' SMTP Server
 ReplyAdd = "donotreply@cldgraphics.com"
 
 ' Recipients that will receive alerts upon a successful submittal.
